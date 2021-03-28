@@ -1,31 +1,22 @@
 {
-  /** ✨
-   * Union Types: OR
-   */
-  type Direction = 'left' | 'right' | 'up' | 'down';
-  function move(direction: Direction) {
-    console.log(direction);
-  }
-  move('down'); // auto complete
-
-  type TileSize = 8 | 16 | 32;
-  const tile: TileSize = 16;
-
   // function: login -> success, fail
   type SuccessState = {
+    result: 'success';
     response: {
       body: string;
     };
   };
 
   type FailState = {
+    result: 'fail';
     reason: string;
   };
 
   type LoginState = SuccessState | FailState;
 
-  function logIn(): LoginState {
+  function login(): LoginState {
     return {
+      result: 'success',
       response: {
         body: 'logged in!',
       },
@@ -36,14 +27,13 @@
   // printLoginState(state)
   // success -> 🎉 body
   // fail -> 😭 reason
-  function printLoginStateWithKey(state: LoginState): void {
-    // but not recommended
-    if ('response' in state) {
+  function printLoginState(state: LoginState): void {
+    if (state.result === 'success') {
       console.log(`🎉 ${state.response.body}`);
     } else {
       console.log(`😭 ${state.reason}`);
     }
   }
 
-  printLoginStateWithKey(logIn());
+  printLoginState(login());
 }

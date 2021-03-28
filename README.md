@@ -48,3 +48,8 @@ npm install -g ts-node
 - OR 개념, 실무에서 자주 쓰인다
 - auto complete 효과 + 여러 type을 조합
 - ``if ('response' in state)``처럼 type을 구분할 수도 있지만, 비추천
+  ### Discriminated Union
+  - type alias에 result와 같은 key를 추가하여 타입을 구분할 수 있도록 만듦
+  - e.g. ``type SuccessState = { result: 'success', response: { body: string } }``
+  - e.g. ``type FailState = { result: 'fail', reason: string }``
+  - ``if (LoginState.result === 'success')``로 type 구분 가능
