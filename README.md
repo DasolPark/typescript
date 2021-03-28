@@ -39,3 +39,6 @@ npm install -g ts-node
 - 서로 다른 타입의 배열을 선언할 수 있는 방법
 - interface, type alias or class로 대체하는 것을 권장
 - 위 경우로 대체할 수 없는 경우 잘 사용한다면 사용 가능
+
+## Alias
+- type을 custom할 수 있음
