@@ -32,13 +32,19 @@ npm install -g ts-node
 ## Array
 
 #### number[] VS Array<number>
-- function(num: readonly number[]) 🅾️
-- function(num: readonly Array<number>) ❌
+- ``function(num: readonly number[])`` 🅾️
+- ``function(num: readonly Array<number>)`` ❌
 
 #### Tuple
 - 서로 다른 타입의 배열을 선언할 수 있는 방법
-- interface, type alias or class로 대체하는 것을 권장
-- 위 경우로 대체할 수 없는 경우 잘 사용한다면 사용 가능
+- ``interface, type alias or class``로 대체하는 것을 권장
+- 위 경우로 대체할 수 없는 경우, 잘 사용한다면 사용 가능
 
 ## Alias
-- type을 custom할 수 있음
+- type alias
+- **string literal types** (e.g. ``type name = 'name'``)
+
+## Union
+- OR 개념, 실무에서 자주 쓰인다
+- auto complete 효과 + 여러 type을 조합
+- ``if ('response' in state)``처럼 type을 구분할 수도 있지만, 비추천
