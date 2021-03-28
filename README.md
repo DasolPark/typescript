@@ -8,6 +8,8 @@ npm install -g ts-node
 - [x] cmd + , ➡️ search "strict null checks" ➡️ true
 
 # Type
+
+## Basic
 #### undefined, null, unknown, any
 - 보통 타입으로 사용하지 않는다
 - string | undefined, number | null 은 있을 수 있다?
@@ -17,7 +19,7 @@ npm install -g ts-node
 #### object
 - primitive를 제외한 모든 type이 object이므로 단순히 { key: value } 를 사용한다고 object type를 사용할 수 없음
 
-### function
+## function
 #### 문서화 효과를 볼 수 있음
 
 #### optional parameter(TS feature)
@@ -26,3 +28,14 @@ npm install -g ts-node
 #### default parameter
 #### rest parameter
 - ``...args``를 이용해 어떤 수의 parameter도 array로 받을 수 있음
+
+## Array
+
+#### number[] VS Array<number>
+- function(num: readonly number[]) 🅾️
+- function(num: readonly Array<number>) ❌
+
+#### Tuple
+- 서로 다른 타입의 배열을 선언할 수 있는 방법
+- interface, type alias or class로 대체하는 것을 권장
+- 위 경우로 대체할 수 없는 경우 잘 사용한다면 사용 가능
