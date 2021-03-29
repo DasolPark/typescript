@@ -45,7 +45,7 @@ npm install -g ts-node
 - **string literal types** (e.g. ``type name = 'name'``)
 
 ## Union
-- OR 개념, 실무에서 자주 쓰인다
+- OR(|) 개념, 실무에서 자주 쓰인다
 - auto complete 효과 + 여러 type을 조합
 - ``if ('response' in state)``처럼 type을 구분할 수도 있지만, 비추천
   ### Discriminated Union
@@ -53,3 +53,7 @@ npm install -g ts-node
   - e.g. ``type SuccessState = { result: 'success', response: { body: string } }``
   - e.g. ``type FailState = { result: 'fail', reason: string }``
   - ``if (LoginState.result === 'success')``로 type 구분 가능
+
+## Intersection
+- And(&)
+- 2가지 type을 선언했다면, 2가지 type의 모든 내용을 전달해줘야 한다
