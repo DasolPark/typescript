@@ -57,3 +57,9 @@ npm install -g ts-node
 ## Intersection
 - And(&)
 - 2가지 type을 선언했다면, 2가지 type의 모든 내용을 전달해줘야 한다
+
+## Enum
+- not recommended
+- 웬만하면 union type으로 대체할 것(아주 특별한 경우에는 사용 가능)
+- Enum type으로 선언된 변수에 해당 type이 아닌 **어떤 값을 할당해도 오류가 발생하지 않는다**
+
