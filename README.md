@@ -70,3 +70,15 @@ npm install -g ts-node
 
 ## Type Assertions
 - !, 정말 확신할 때 사용할 수 있다. 하지만 추천하지 않는다
+
+# OOP(Object Oriented Programming)
+- 실제 사물(object)을 토대로 프로그래밍하는 기법
+
+## static
+- instance(object)가 생성될 때마다 함께 생성되지 않고, class level로 선언되어 단 한 번만 생성된다
+- ClassName.staticVariable 로 접근 가능
+
+## public, private, protected
+- public은 말 그대로 어디서든 접근 가능
+- private은 해당 instance내에서만 접근 가능
+- protected는 해당 instance + 해당 class를 상속한 class에서도 접근 가능
