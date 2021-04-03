@@ -82,3 +82,11 @@ npm install -g ts-node
 - public은 말 그대로 어디서든 접근 가능
 - private은 해당 instance내에서만 접근 가능
 - protected는 해당 instance + 해당 class를 상속한 class에서도 접근 가능
+
+## constructor
+- parameter에 private 같은 접근지정자를 입력해주면 따로 위에 멤버변수를 선언해주지 않아도 된다(변수 선언과 동시에 저장된다)
+
+## getter & setter
+- constructor에서 멤버변수값 저장을 끝낸 후 instance를 통해 멤버변수에 저장하여 값을 변경하면 반영되지 않음(3-OOP/3-3_encapsulation User class 참고)
+- 따라서 변경된 값을 미리 세팅하여 가져오고 싶을 경우 getter를 사용할 수 있음
+- 멤버변수를 변경하고자 하는데 비즈니스 로직이 필요하다면 setter를 사용할 수 있음
