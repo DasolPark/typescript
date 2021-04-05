@@ -9,7 +9,7 @@ npm install -g ts-node
 
 # Type
 
-### Basic
+## Basic
 #### undefined, null, unknown, any
 - 보통 타입으로 사용하지 않는다
 - string | undefined, number | null 은 있을 수 있다?
@@ -19,7 +19,7 @@ npm install -g ts-node
 #### object
 - primitive를 제외한 모든 type이 object이므로 단순히 { key: value } 를 사용한다고 object type를 사용할 수 없음
 
-### function
+## function
 #### 문서화 효과를 볼 수 있음
 
 #### optional parameter(TS feature)
