@@ -90,3 +90,11 @@ npm install -g ts-node
 - constructor에서 멤버변수값 저장을 끝낸 후 instance를 통해 멤버변수에 저장하여 값을 변경하면 반영되지 않음(3-OOP/3-3_encapsulation User class 참고)
 - 따라서 변경된 값을 미리 세팅하여 가져오고 싶을 경우 getter를 사용할 수 있음
 - 멤버변수를 변경하고자 하는데 비즈니스 로직이 필요하다면 setter를 사용할 수 있음
+
+## Abstraction
+- interface를 simple하게 만들어서 사용하는 사람이 간편하게 사용할 수 있도록 도와줌
+- private을 이용한 정보 은닉을 통해서도 추상화 가능(interface가 없는 언어의 경우), 필요한 함수만 노출
+- **interface**는 나랑 의사소통하려면 이런이런 규약이 필요해! (계약서와 같은 존재)
+- interface name에 I(prefix)를 붙이거나, class name에 Impl(postfix)을 붙여주기도 한다
+- 하지만, interface name과 다르게 class name을 간단한 이름으로 만들어줘도 된다
+- 특정 interface만 이용해서 복잡한 class를 간단하게 이용할 수 있도록 만들 수 있다
