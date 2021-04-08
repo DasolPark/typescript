@@ -98,3 +98,8 @@ npm install -g ts-node
 - interface name에 I(prefix)를 붙이거나, class name에 Impl(postfix)을 붙여주기도 한다
 - 하지만, interface name과 다르게 class name을 간단한 이름으로 만들어줘도 된다
 - 특정 interface만 이용해서 복잡한 class를 간단하게 이용할 수 있도록 만들 수 있다
+
+## Inheritance
+- 상속을 통해 기존 class를 재사용할 수 있다
+- extends className을 통해 상속하며, super를 통해 부모 class에 접근할 수 있다
+- 또한, method overrinding or overloading이 가능하다.
