@@ -103,3 +103,12 @@ npm install -g ts-node
 - 상속을 통해 기존 class를 재사용할 수 있다
 - extends className을 통해 상속하며, super를 통해 부모 class에 접근할 수 있다
 - 또한, method overrinding or overloading이 가능하다.
+
+## Polymorphism
+- parent class에 따라 다양한 instance를 생성할 수 있음
+- 가장 최상위 조상을 type으로 이용하면 이하 모든 class를 담을 수 있음
+- e.g. 하나의 interface를 이용해 모두 다른 기능을 가지고 있는 class를 만들 수 있음
+- 그리고 이 안에서 공통 기능을 만들어 모든 class에서 사용할 수 있도록 만들 수 있음
+
+## Composition
+- 여러가지 class를 상속하고 싶지만, 단 하나의 class만 상속할 수 있다(단점)
