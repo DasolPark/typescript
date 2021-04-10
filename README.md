@@ -115,3 +115,4 @@ npm install -g ts-node
 - favor COMPOSITION over inheritance
 - 필요한 class들을 만들어서 레고처럼 조립해 사용
 - 다른 구성요소와 밀접한 연관을 맺고 있어서 제약사항이 존재함(composition의 단점)
+- composition ➡️ interface: coupling ➡️ decoupling
