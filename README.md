@@ -111,4 +111,7 @@ npm install -g ts-node
 - 그리고 이 안에서 공통 기능을 만들어 모든 class에서 사용할 수 있도록 만들 수 있음
 
 ## Composition
-- 여러가지 class를 상속하고 싶지만, 단 하나의 class만 상속할 수 있다(단점)
+- 여러가지 class를 상속하고 싶지만, 단 하나의 class만 상속할 수 있다(상속의 단점)
+- favor COMPOSITION over inheritance
+- 필요한 class들을 만들어서 레고처럼 조립해 사용
+- 다른 구성요소와 밀접한 연관을 맺고 있어서 제약사항이 존재함(composition의 단점)
