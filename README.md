@@ -116,3 +116,4 @@ npm install -g ts-node
 - 필요한 class들을 만들어서 레고처럼 조립해 사용
 - 다른 구성요소와 밀접한 연관을 맺고 있어서 제약사항이 존재함(composition의 단점)
 - composition ➡️ interface: coupling ➡️ decoupling
+- decoupling을 통해 다형성 class를 만드는 것보다 하나의 class로 여러 재료를 혼합할 수 있는 object를 만들 수 있다
