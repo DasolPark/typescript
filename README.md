@@ -117,3 +117,10 @@ npm install -g ts-node
 - 다른 구성요소와 밀접한 연관을 맺고 있어서 제약사항이 존재함(composition의 단점)
 - composition ➡️ interface: coupling ➡️ decoupling
 - decoupling을 통해 다형성 class를 만드는 것보다 하나의 class로 여러 재료를 혼합할 수 있는 object를 만들 수 있다
+
+## Abstract
+- "abstract" keyword를 class 앞에 붙여 사용(abstract가 적용된 class는 instance를 생성할 수 없다)
+- 공통적으로 사용되는 fields or method 모두 구현 가능
+- 하지만 매번 달라질 수 있는 method는 "abstract" keyword를 이용해 method 선언만 가능(기능 구현 불가)
+- 매번 달라질 수 있는 method지만 필수적으로 들어가야하는 내용을 체크해줄 수 있다
+- 매우 수직적으로 깊은 상속보다는 composition을 추천(상황별로 다름)
