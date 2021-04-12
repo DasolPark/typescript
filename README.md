@@ -127,3 +127,7 @@ npm install -g ts-node
 
 ## OOP Challenge(STACK)
 - array 사용 없이 구현할 것
+- interface, type alias, class 이용
+
+# Generic
+- 사용하는 사람이 타입을 결정할 수 있고(재사용성⬆️), 유연하고, 타입을 보장받을 수 있다
