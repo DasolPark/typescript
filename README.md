@@ -124,3 +124,6 @@ npm install -g ts-node
 - 하지만 매번 달라질 수 있는 method는 "abstract" keyword를 이용해 method 선언만 가능(기능 구현 불가)
 - 매번 달라질 수 있는 method지만 필수적으로 들어가야하는 내용을 체크해줄 수 있다
 - 매우 수직적으로 깊은 상속보다는 composition을 추천(상황별로 다름)
+
+## OOP Challenge(STACK)
+- array 사용 없이 구현할 것
