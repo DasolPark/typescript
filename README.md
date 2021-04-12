@@ -131,3 +131,10 @@ npm install -g ts-node
 
 # Generic
 - 사용하는 사람이 타입을 결정할 수 있고(재사용성⬆️), 유연하고, 타입을 보장받을 수 있다
+
+## Generic function
+- function<G>(arg: G): G
+
+## Generic class
+- class<G, T>, interface<G, T>
+- class className<T> implements interfaceName<T> {}
