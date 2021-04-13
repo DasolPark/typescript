@@ -138,3 +138,8 @@ npm install -g ts-node
 ## Generic class
 - class<G, T>, interface<G, T>
 - class className<T> implements interfaceName<T> {}
+
+## Constrains
+- 어떤 타입이든 받겠다고 제네릭을 사용하면 본래 타입을 잃는 경우가 발생
+- 따라서, 해당 타입을 잃지 않도록 정확히 타입을 지정해주는 것이 좋다
+- e.g. function<T extends Employee>(employee: T):T {} Employee interface를 확장한 Type만 가능하다는 뜻
