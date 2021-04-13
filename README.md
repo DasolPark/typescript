@@ -144,3 +144,6 @@ npm install -g ts-node
 - 따라서, 해당 타입을 잃지 않도록 정확히 타입을 지정해주는 것이 좋다
 - e.g. function pay<T extends Employee>(employee: T):T {} Employee interface를 확장한 Type만 가능하다는 뜻
 - e.g. function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {} 해당 object에 있는 key만 가능하다는 뜻
+
+## Generic Challenge(STACK)
+
