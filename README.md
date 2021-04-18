@@ -155,4 +155,9 @@ npm install -g ts-node
 - 위와 같은 오픈소스 프로젝트를 통해 contribution이 가능
 
 # Exception(error handling)
-- Exception VS Error State 구분 필요!
+- Exception(예측 불가) VS Error State(예측 가능 e.g. 404) 구분 필요!
+
+## Try/Catch/Finally
+- try { 에러가 발생할 가능성이 있는 코드만 }
+- catch { 에러가 발생했을 경우 구체적으로 안내 }
+- finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }
