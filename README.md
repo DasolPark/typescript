@@ -147,5 +147,9 @@ npm install -g ts-node
 
 ## Generic Challenge(STACK)
 
-## Level up with API and open source
+# Level up with API and open source
 - 해당 built-in function이 선언된 곳을 찾아가 코멘트로 기능 파악하기(command + click)
+
+## Open Source
+- E.g. https://github.com/microsoft/vscode
+- 위와 같은 오픈소스 프로젝트를 통해 contribution이 가능
