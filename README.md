@@ -160,4 +160,4 @@ npm install -g ts-node
 ## Try/Catch/Finally
 - try { 에러가 발생할 가능성이 있는 코드만 }
 - catch { 에러가 발생했을 경우 구체적으로 안내 }
-- finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }
+- finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }, try or catch에서 return 되어도 무조건 실행된다
