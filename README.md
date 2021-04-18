@@ -146,3 +146,6 @@ npm install -g ts-node
 - e.g. function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {} 해당 object에 있는 key만 가능하다는 뜻
 
 ## Generic Challenge(STACK)
+
+## Level up with API and open source
+- 해당 built-in function이 선언된 곳을 찾아가 코멘트로 기능 파악하기(command + click)
