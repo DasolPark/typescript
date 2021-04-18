@@ -3,7 +3,7 @@
    * Let's make a game 🕹
    */
 
-  type Direction = 'up' | 'down' | 'left' | 'right';
+  type Direction = 'up' | 'down' | 'left' | 'right' | 'exceptional';
   type Position = { x: number, y: number };
 
   let position: Position = { x: 0, y: 0 };
@@ -23,6 +23,7 @@
         position.x++;
         break;
       default:
+        const invalid: never = direction; // catch for complie time
         throw new Error(`unknown direction: ${direction}`);
     }
   }

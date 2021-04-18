@@ -153,3 +153,6 @@ npm install -g ts-node
 ## Open Source
 - E.g. https://github.com/microsoft/vscode
 - 위와 같은 오픈소스 프로젝트를 통해 contribution이 가능
+
+# Exception(error handling)
+- Exception VS Error State 구분 필요!
