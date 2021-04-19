@@ -164,3 +164,7 @@ npm install -g ts-node
 
 ## Elegant error handling
 - 에러를 처리하기 위한 구문을 작성할 것이라면, 내가 그 에러를 처리해줄 수 있는 곳에 넣어야한다
+
+## Error State
+- exception은 정말 예상치 못한 에러를 처리할 때 사용 권장
+- discriminated union type을 이용해 error state를 만들어 처리해주는 것이 좋다
