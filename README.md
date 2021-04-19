@@ -161,3 +161,6 @@ npm install -g ts-node
 - try { 에러가 발생할 가능성이 있는 코드만 }
 - catch { 에러가 발생했을 경우 구체적으로 안내 }
 - finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }, try or catch에서 return 되어도 무조건 실행된다
+
+## Elegant error handling
+- 에러를 처리하기 위한 구문을 작성할 것이라면, 내가 그 에러를 처리해줄 수 있는 곳에 넣어야한다
