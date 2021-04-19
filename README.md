@@ -168,3 +168,12 @@ npm install -g ts-node
 ## Error State
 - exception은 정말 예상치 못한 에러를 처리할 때 사용 권장
 - discriminated union type을 이용해 error state를 만들어 예상 가능한 에러를 처리해주는 것이 가장 이상적
+
+# Core of TypeScript(advanced types)
+Conditional Types, **Mapped Types**, **utility Types** 강력!
+
+## Type(alias) VS Interface
+**기술적(구현 사항)**
+- interface는 결합이 가능(따로 따로 써도 하나로 인식) - 해당 기능이 필요한 사람에게 좋다
+- interface는 union type을 사용할 수 없다
+- type은 computed properties를 사용할 수 있다
