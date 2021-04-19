@@ -173,7 +173,11 @@ npm install -g ts-node
 Conditional Types, **Mapped Types**, **utility Types** 강력!
 
 ## Type(alias) VS Interface
-**기술적(구현 사항)인 부분의 특징**
+**기술적(구현 사항) 측면**
 - interface는 결합이 가능(따로 따로 써도 하나로 인식) - 해당 기능이 필요한 사람에게 좋다
 - interface는 union type을 사용할 수 없다
 - type은 computed properties를 사용할 수 있다
+
+**개념적 측면**
+- 구현될 규격사항을 나타낼 때는 **interface**
+- 데이터를 담겨 있는 타입을 나타낼 때는 **type(alias)**
