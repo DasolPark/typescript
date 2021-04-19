@@ -180,4 +180,4 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 
 **개념적 측면**
 - 구현될 규격사항을 나타낼 때는 **interface**
-- 데이터를 담겨 있는 타입을 나타낼 때는 **type(alias)**
+- 데이터가 담겨 있는 타입을 나타낼 때는 **type(alias)**
