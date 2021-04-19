@@ -167,4 +167,4 @@ npm install -g ts-node
 
 ## Error State
 - exception은 정말 예상치 못한 에러를 처리할 때 사용 권장
-- discriminated union type을 이용해 error state를 만들어 처리해주는 것이 좋다
+- discriminated union type을 이용해 error state를 만들어 예상 가능한 에러를 처리해주는 것이 가장 이상적
