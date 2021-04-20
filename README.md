@@ -133,17 +133,17 @@ npm install -g ts-node
 - 사용하는 사람이 타입을 결정할 수 있고(재사용성⬆️), 유연하고, 타입을 보장받을 수 있다
 
 ## Generic function
-- function<G>(arg: G): G
+- `function<G>(arg: G): G`
 
 ## Generic class
-- class<G, T>, interface<G, T>
-- class className<T> implements interfaceName<T> {}
+- `class<G, T>, interface<G, T>`
+- `class className<T> implements interfaceName<T> {}`
 
 ## Generic Constraints
 - 어떤 타입이든 받겠다고 제네릭을 사용하면 본래 타입을 잃는 경우가 발생
 - 따라서, 해당 타입을 잃지 않도록 정확히 타입을 지정해주는 것이 좋다
-- e.g. function pay<T extends Employee>(employee: T):T {} Employee interface를 확장한 Type만 가능하다는 뜻
-- e.g. function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {} 해당 object에 있는 key만 가능하다는 뜻
+- e.g. `function pay<T extends Employee>(employee: T):T {}` Employee interface를 확장한 Type만 가능하다는 뜻
+- e.g. `function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {}` 해당 object에 있는 key만 가능하다는 뜻
 
 ## Generic Challenge(STACK)
 
@@ -158,9 +158,9 @@ npm install -g ts-node
 - Exception(예측 불가) VS Error State(예측 가능 e.g. 404) 구분 필요!
 
 ## Try/Catch/Finally
-- try { 에러가 발생할 가능성이 있는 코드만 }
-- catch { 에러가 발생했을 경우 구체적으로 안내 }
-- finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }, try or catch에서 return 되어도 무조건 실행된다
+- `try { 에러가 발생할 가능성이 있는 코드만 }`
+- `catch { 에러가 발생했을 경우 구체적으로 안내 }`
+- `finally { 에러가 나든 안나든 처리해줘야할 코드 작성 }`, try or catch에서 return 되어도 무조건 실행된다
 
 ## Elegant error handling
 - 에러를 처리하기 위한 구문을 작성할 것이라면, 내가 그 에러를 처리해줄 수 있는 곳에 넣어야한다
@@ -181,3 +181,10 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 **개념적 측면**
 - 구현될 규격사항을 나타낼 때는 **interface**
 - 데이터가 담겨 있는 타입을 나타낼 때는 **type(alias)**
+
+## Utility Types
+- **can transform type**
+
+  ### Index
+  - object의 값을 dot notation이 아닌 ['key']로 불러오는 것과 같은 방법으로 사용
+  - E.g. `type Person { name: string; } type Name = Person['name']`을 사용하면 Person의 name과 같은 type을 사용 가능
