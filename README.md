@@ -195,3 +195,7 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 
   ## Conditional Type
   - E.g. `type Check<T> = T extends string ? 'string' : 'number'`
+
+  ## Readonly
+  - 앞에서 사용했던 Mapped Type들은 이미 선언되어 있기 때문에 우리는 그저 사용하기만 하면 된다
+  - `Partial<T>, Required<T>` and so on...
