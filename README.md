@@ -185,6 +185,10 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 ## Utility Types
 - **can transform type**
 
-  ### Index
+  ### Index Type
   - object의 값을 dot notation이 아닌 ['key']로 불러오는 것과 같은 방법으로 사용
   - E.g. `type Person { name: string; } type Name = Person['name']`을 사용하면 Person의 name과 같은 type을 사용 가능
+
+  ### Mapped Type
+  - `for...in`처럼 type을 mapped 시킨다
+  - E.g. `type Optional<T> = { [P in keyof T]?: T[P] }`
