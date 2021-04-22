@@ -192,3 +192,6 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
   ### Mapped Type
   - `for...in`처럼 type을 mapped 시킨다
   - E.g. `type Optional<T> = { [P in keyof T]?: T[P] }`
+
+  ## Conditional Type
+  - E.g. `type Check<T> = T extends string ? 'string' : 'number'`
