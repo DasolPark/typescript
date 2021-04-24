@@ -227,3 +227,7 @@ JavaScript is proto-based programming language
 tsc --init // generate typescript config file
 tsc -w
 ```
+
+## Project structure
+- 보통 src안에 모든 ts파일을 넣고(rootDir), build에 컴파일된 js파일을 넣는다(outDir)
+- compilerOptions {} 외 exclude, include, or etc 다양한 옵션을 이용할 수 있다("을 입력하면 가능한 옵션을 추천해준다)
