@@ -184,7 +184,8 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 
 ## Utility Types
 - **can transform type**
-
+- 일반적으로 생각할 수 있는 Mapped Type들은 이미 선언되어 있기 때문에 우리는 그저 사용하기만 하면 된다
+- `Partial<T>, Required<T>` and so on...
   ### Index Type
   - object의 값을 dot notation이 아닌 ['key']로 불러오는 것과 같은 방법으로 사용
   - E.g. `type Person { name: string; } type Name = Person['name']`을 사용하면 Person의 name과 같은 type을 사용 가능
@@ -193,9 +194,5 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
   - `for...in`처럼 type을 mapped 시킨다
   - E.g. `type Optional<T> = { [P in keyof T]?: T[P] }`
 
-  ## Conditional Type
+  ### Conditional Type
   - E.g. `type Check<T> = T extends string ? 'string' : 'number'`
-
-  ## Readonly
-  - 앞에서 사용했던 Mapped Type들은 이미 선언되어 있기 때문에 우리는 그저 사용하기만 하면 된다
-  - `Partial<T>, Required<T>` and so on...
