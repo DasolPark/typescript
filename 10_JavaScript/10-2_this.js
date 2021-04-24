@@ -9,12 +9,12 @@ console.clear();
 
 class Counter {
   count = 0;
-  // increase = function () {
-  //   console.log(this);
-  // };
-  increase = () => {
+  increase = function () {
     console.log(this);
-  }
+  };
+  // increase = () => {
+  //   console.log(this);
+  // }
 }
 const counter = new Counter();
 counter.increase();
