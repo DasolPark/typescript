@@ -9,14 +9,17 @@ console.clear();
 
 class Counter {
   count = 0;
-  increase = function () {
+  // increase = function () {
+  //   console.log(this);
+  // };
+  increase = () => {
     console.log(this);
-  };
+  }
 }
 const counter = new Counter();
 counter.increase();
-// const caller = counter.increase;
-const caller = counter.increase.bind(counter);
+const caller = counter.increase;
+// const caller = counter.increase.bind(counter);
 caller();
 
 // function is always registered to global(window)
