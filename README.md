@@ -7,6 +7,11 @@ npm install -g ts-node
 ```
 - [x] cmd + , ➡️ search "strict null checks" ➡️ true
 
+```
+tsc typescript.ts
+tsc typescript.ts --w(watch)
+```
+
 # Type
 
 ## Basic
@@ -216,3 +221,9 @@ JavaScript is proto-based programming language
 - `export default or export`
 - `import something from 'path', import { one, two } from 'path' or import * as something from 'path'`
 - 만약 JS files without a suffix를 설정할 수 없다면 `'path/javascript.js'` 처럼 .js 확장자를 꼭 써줘야한다
+
+# TypeScript compiler
+```
+tsc --init // generate typescript config file
+tsc -w
+```
