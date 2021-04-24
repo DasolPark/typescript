@@ -207,6 +207,7 @@ JavaScript is proto-based programming language
 ## Prototype demo
 - 모든 object는 Object를 상속한다
 - prototype을 이용해서 상속을 구현할 수 있다(10_JavaScript/10-1_proto.js 코드 참고)
+- instance member level & prototype member level ✨
 
 ## this
 - before dot(.)
