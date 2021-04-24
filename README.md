@@ -203,3 +203,7 @@ JavaScript is proto-based programming language
 ## What is Prototype?
 - a style of OOP
 - behavior reuse(inheritance) by reusing existing objects that serve as prototype
+
+## Prototype demo
+- 모든 object는 Object를 상속한다
+- prototype을 이용해서 상속을 구현할 수 있다(10_JavaScript/10-1_proto.js 코드 참고)
