@@ -197,3 +197,9 @@ Conditional Types, **Mapped Types**, **utility Types** 강력!
 
   ### Conditional Type
   - E.g. `type Check<T> = T extends string ? 'string' : 'number'`
+
+# JavaScript Core for learning TypeScript
+JavaScript is proto-based programming language
+## What is Prototype?
+- a style of OOP
+- behavior reuse(inheritance) by reusing existing objects that serve as prototype
