@@ -8,19 +8,30 @@
 
   type VideoMetadata = Pick<Video, 'id' | 'title'>
 
-  function getVideo(id: string): Video {
-    return {
+  const videos: Array<Video> = [
+    {
       id: '1',
-      title: 'video',
-      url: 'https://www.video.com',
+      title: 'first video',
+      url: 'https://video.com',
       data: 'byte-data...',
-    }
+    },
+    {
+      id: '2',
+      title: 'second video',
+      url: 'https://video.com',
+      data: 'byte-data...',
+    },
+  ]
+
+  function getVideo(videos: Array<Video>, id: string): Video {
+    return videos[id];
   }
 
-  function getvideoMetadata(id: string): VideoMetadata {
-    return {
-      id,
-      title: 'second video'
-    };
+  function getvideoMetadata(videos: Array<Video>, id: string): VideoMetadata {
+    const selectedVideo: Video = videos[id];
+    return { id: selectedVideo.id, title: selectedVideo.title };
   }
+
+  const result = getvideoMetadata(videos, '1');
+  console.log(result);
 }
