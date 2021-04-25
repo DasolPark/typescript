@@ -251,3 +251,11 @@ https://aka.ms/tsconfig.json
 - noEmit: compile error만 체크하고 js파일은 추출하지 않음
 - importHelpers & downlevelIteration: 정말 오래된 버전을 지원해야할 때 이용(문제가 될 수 있는 부분을 보완해줌)
 - isolatedModules: 각각의 파일을 다른 모듈로 변환해서 만들 때 사용
+
+## How to debug
+`"sourceMap": true`
+
+- build된 소스만 보고 버그를 찾아내는 것은 매우 힘듦
+- true로 설정하면 chrome browser의 source 탭에서 이제 ts파일도 함께 볼 수 있고, break point를 걸어 debugging도 할 수 있음
+- sourceMap파일은 js와 ts를 연결해주는 역할(작성한 ts가 컴파일된 js의 어느 부분을 가리키는 지 알려줌)
+- chrome browser에서 debugging하는 것도 좋으며, VSCode에서 'Debugger for Chrome' extension을 이용하는 것도 좋다
