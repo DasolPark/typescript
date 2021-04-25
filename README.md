@@ -229,5 +229,25 @@ tsc -w
 ```
 
 ## Project structure
+https://aka.ms/tsconfig.json
+
 - 보통 src안에 모든 ts파일을 넣고(rootDir), build에 컴파일된 js파일을 넣는다(outDir)
-- compilerOptions {} 외 exclude, include, or etc 다양한 옵션을 이용할 수 있다("을 입력하면 가능한 옵션을 추천해준다)
+- compilerOptions {} 외 exclude, include, or etc 다양한 옵션을 이용할 수 있다
+- "을 입력하면 가능한 옵션을 추천해준다 ✨
+
+## Config options
+- incremental: 기존에 컴파일된 ts는 다시 컴파일하지 않고, 새롭게 추가된 ts만 컴파일
+- target: 어떤 버전으로 컴파일할 것인 지 설정. 보통 ES5 or ES6를 사용하며 더 낮은 버전을 쓴다면 코드가 굉장히 복잡해질 수 있음
+- module: node라면 "commonjs", browser라면 적합한 ECMAScript 표준안에 맞는 것을 선택(위 url의 "module" 참고)
+- lib: 특정 lib를 사용하고 싶을 때 추가
+- allowJs: ts와 js를 병행해서 작업할 때 true
+- checkJs: js에서 문제가 있을 때 check
+- jsx: React related
+- declaration: 작성한 코드를 library형식으로 다른 사람에게 제공할 것이 아니라면 잘 쓰지 않는다
+- sourceMap: for debug
+- outFile: 작업한 모든 파일을 하나의 js로 만들고 싶을 때 이용
+- composite: incremental과 함께 가는 기능으로서 이전에 빌드된 정보를 기억하여 더 빠르게 컴파일 가능?
+- tsBuildInfoFile: incremental과 관련된 정보를 담을 수 있는 파일 지정
+- noEmit: compile error만 체크하고 js파일은 추출하지 않음
+- importHelpers & downlevelIteration: 정말 오래된 버전을 지원해야할 때 이용(문제가 될 수 있는 부분을 보완해줌)
+- isolatedModules: 각각의 파일을 다른 모듈로 변환해서 만들 때 사용
