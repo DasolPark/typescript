@@ -259,3 +259,13 @@ https://aka.ms/tsconfig.json
 - true로 설정하면 chrome browser의 source 탭에서 이제 ts파일도 함께 볼 수 있고, break point를 걸어 debugging도 할 수 있음
 - sourceMap파일은 js와 ts를 연결해주는 역할(작성한 ts가 컴파일된 js의 어느 부분을 가리키는 지 알려줌)
 - chrome browser에서 debugging하는 것도 좋으며, VSCode에서 'Debugger for Chrome' extension을 이용하는 것도 좋다
+
+# Motion Project
+- OOP & type safely!
+- Design Concept: https://dribbble.com/shots/14931899-TIGERS
+- Background: https://coolbackgrounds.io/white-background/
+- Random Image: https://picsum.photos/
+
+## Project Tip
+1. What are the features?
+2. What is the roadmap? (must have / good to have / nice to have)
