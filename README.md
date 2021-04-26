@@ -265,6 +265,8 @@ https://aka.ms/tsconfig.json
 - Design Concept: https://dribbble.com/shots/14931899-TIGERS
 - Background: https://coolbackgrounds.io/white-background/
 - Random Image: https://picsum.photos/
+- 17 User story examples for when the ink runs dry: https://www.justinmind.com/blog/user-story-examples/
+- Search **"User Story"**
 
 ## Project Tip
 1. What are the features?
