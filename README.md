@@ -271,3 +271,7 @@ https://aka.ms/tsconfig.json
 ## Project Tip
 1. What are the features?
 2. What is the roadmap? (must have / good to have / nice to have)
+
+## DOM(Document Object Model)
+- HTML **Tag** -> JavaScript **Node**
+- EventTarget <- Node <- Document, Element, Text <-(Element) HTMLElement <- HTMLInputElement, HTMLDivElement, etc
