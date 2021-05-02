@@ -275,3 +275,10 @@ https://aka.ms/tsconfig.json
 ## DOM(Document Object Model)
 - HTML **Tag** -> JavaScript **Node**
 - EventTarget <- Node <- Document, Element, Text <-(Element) HTMLElement <- HTMLInputElement, HTMLDivElement, etc
+
+# Check List
+- [ ] tsconfig **target**: es5? es6?
+- [ ] tsconfig **module**: commonjs? es2015?
+- [ ] gitignore **subdirectories path**: for ignoring dist/*
+- [ ] Regular Expression: basic
+- [ ] script tag **type="module"**, **defer/async**
