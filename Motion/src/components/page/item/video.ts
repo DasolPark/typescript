@@ -12,20 +12,26 @@ export class VideoComponent extends BaseComponent<HTMLElement> {
     `);
 
     const iframe = this.element.querySelector('.video__iframe')! as HTMLIFrameElement;
-    console.log(url);
-    iframe.src = 'https://www.youtube.com/embed/I5DJrMeR228'; // url -> videoId
+    iframe.src = this.convertToEmbeddedURL(url);
 
     const titleElement = this.element.querySelector('.video__title')! as HTMLHeadingElement;
     titleElement.textContent = title;
   }
-}
 
-// <iframe 
-//   width="560"
-//   height = "315"
-//   src = "https://www.youtube.com/embed/I5DJrMeR228"
-//   title = "YouTube video player"
-//   frameborder = "0"
-//   allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//   allowfullscreen
-// > </iframe>
+  // https://www.youtube.com/watch?v=I5DJrMeR228&ab_channel=CaseyNeistat
+  // https://youtu.be/I5DJrMeR228
+  // output
+  // https://www.youtube.com/embed/I5DJrMeR228
+  // 정규표현식 Regex
+  private convertToEmbeddedURL(url: string): string {
+    const regExp = /^(?:https?:\/\/)?(?:www\.)?(?:(?:youtube.com\/(?:(?:watch\?v=)|(?:embed\/))([a-zA-Z0-9-]{11}))|(?:youtu.be\/([a-zA-Z0-9-]{11})))/;
+    const match = url.match(regExp);
+    console.log(match);
+    const videoId = match ? match[1] || match[2] : undefined;
+
+    if (videoId) {
+      return `https://youtube.com/embed/${videoId}`;
+    }
+    return url;
+  }
+}
