@@ -282,3 +282,4 @@ https://aka.ms/tsconfig.json
 - [ ] gitignore **subdirectories path**: for ignoring dist/*
 - [ ] Regular Expression: basic
 - [ ] script tag **type="module"**, **defer/async**
+- [ ] template tag detail
