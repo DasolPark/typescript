@@ -277,9 +277,9 @@ https://aka.ms/tsconfig.json
 - EventTarget <- Node <- Document, Element, Text <-(Element) HTMLElement <- HTMLInputElement, HTMLDivElement, etc
 
 # Check List
-- [ ] tsconfig **target**: es5? es6?
-- [ ] tsconfig **module**: commonjs? es2015?
+- [x] tsconfig **target**: es5? es6?
+- [x] tsconfig **module**: commonjs? es2015?
 - [ ] gitignore **subdirectories path**: for ignoring dist/*
 - [ ] Regular Expression: basic
-- [ ] script tag **type="module"**, **defer/async**
+- [x] script tag **type="module"**, **defer/async**
 - [ ] template tag detail
