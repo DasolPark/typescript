@@ -1,2 +1,4 @@
 playground.ts
-Motion/dist/*
+# Motion/dist/*
+dist
+.vscode
