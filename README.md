@@ -283,3 +283,4 @@ https://aka.ms/tsconfig.json
 - [ ] Regular Expression: basic
 - [x] script tag **type="module"**, **defer/async**
 - [ ] template tag detail
+- [ ] dependency injection(with TypeScript)
