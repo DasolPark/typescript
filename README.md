@@ -276,6 +276,10 @@ https://aka.ms/tsconfig.json
 - HTML **Tag** -> JavaScript **Node**
 - EventTarget <- Node <- Document, Element, Text <-(Element) HTMLElement <- HTMLInputElement, HTMLDivElement, etc
 
+## ETC
+- element.addEventListener를 등록하면 같은 이벤트라도 순서대로 실행
+- but, element.onclick같이 바로 이벤트를 등록하면 덮어쓰기되어 1개만 실행 
+
 # Check List
 - [x] tsconfig **target**: es5? es6?
 - [x] tsconfig **module**: commonjs? es2015?
