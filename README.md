@@ -267,10 +267,21 @@ https://aka.ms/tsconfig.json
 - Random Image: https://picsum.photos/
 - 17 User story examples for when the ink runs dry: https://www.justinmind.com/blog/user-story-examples/
 - Search **"User Story"**
+  - must have
+    - As a user, I want to add an image
+    - As a user, I want to add youtube video
+    - As a user, I want to add a note
+    - As a user, I want to add todo list
+    - AS a user, I want to delete sections
+  - good to have
+    - As a user, I want to reorder sections by dragging
+  - nitce to have
+    - As a user, I want to update sections
 
 ## Project Tip
 1. What are the features?
 2. What is the roadmap? (must have / good to have / nice to have)
+3. search "keyword + example + codepen"
 
 ## DOM(Document Object Model)
 - HTML **Tag** -> JavaScript **Node**
