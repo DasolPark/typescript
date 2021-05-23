@@ -17,8 +17,6 @@ type SectionContainerConstructor = {
   new(): SectionContainer;
 }
 
-// Example
-// DarkModePageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer { }
 export class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
   private closeListener?: OnCloseListener;
   private dragStateListener?: OnDragStateListener<PageItemComponent>
@@ -53,22 +51,17 @@ export class PageItemComponent extends BaseComponent<HTMLElement> implements Sec
   }
 
   onDragStart(_: DragEvent) {
-    // console.log('dragStart', event);
     this.notifyDragObservers('start');
   }
   onDragEnd(_: DragEvent) {
-    // console.log('dragEnd', event);
     this.notifyDragObservers('stop');
   }
   onDragEnter(_: DragEvent) {
-    // console.log('dragEnter', event);
     this.notifyDragObservers('enter');
   }
   onDragLeave(_: DragEvent) {
-    // console.log('dragLeave', event);
     this.notifyDragObservers('leave');
   }
-
   notifyDragObservers(state: DragState) {
     this.dragStateListener && this.dragStateListener(this, state);
   }
