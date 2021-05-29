@@ -134,6 +134,12 @@ tsc typescript.ts --w(watch)
 - array 사용 없이 구현할 것
 - interface, type alias, class 이용
 
+## Decorators(similar to mixin in JS) not supported yet
+- can dynamic composition
+- can loging
+- a lot used in AngularJS
+- Ref: https://www.typescriptlang.org/docs/handbook/decorators.html
+
 # Generic
 - 사용하는 사람이 타입을 결정할 수 있고(재사용성⬆️), 유연하고, 타입을 보장받을 수 있다
 
