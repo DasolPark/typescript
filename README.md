@@ -307,3 +307,7 @@ https://aka.ms/tsconfig.json
 - [x] template tag detail
 - [ ] dependency injection(with TypeScript)
 - [ ] Coupling & Decoupling
+- [ ] Set
+- [ ] Decorators
+- [ ] DOMRect
+- [ ] pointer-events

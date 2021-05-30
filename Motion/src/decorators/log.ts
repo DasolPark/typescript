@@ -1,25 +1,25 @@
-function Log(_: any, name: string, descriptor: PropertyDescriptor): PropertyDescriptor {
-  const newDescriptor = {
-    ...descriptor,
-    value: function (...args: any[]): any {
-      console.log(`Calling ${name} with arguments:`);
-      console.dir(args);
-      const result = descriptor.value.apply(this, args);
-      console.log(`Result:`);
-      console.log(result);
-      return result;
-    },
-  };
+// function Log(_: any, name: string, descriptor: PropertyDescriptor): PropertyDescriptor {
+//   const newDescriptor = {
+//     ...descriptor,
+//     value: function (...args: any[]): any {
+//       console.log(`Calling ${name} with arguments:`);
+//       console.dir(args);
+//       const result = descriptor.value.apply(this, args);
+//       console.log(`Result:`);
+//       console.log(result);
+//       return result;
+//     },
+//   };
 
-  return newDescriptor;
-}
+//   return newDescriptor;
+// }
 
-class Calculator {
-  @Log
-  add(x: number, y: number): number {
-    return x + y;
-  }
-};
+// class Calculator {
+//   @Log
+//   add(x: number, y: number): number {
+//     return x + y;
+//   }
+// };
 
-const calculator = new Calculator();
-console.log(calculator.add(1, 2));
+// const calculator = new Calculator();
+// console.log(calculator.add(1, 2));
