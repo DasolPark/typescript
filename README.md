@@ -299,6 +299,7 @@ https://aka.ms/tsconfig.json
 - overengineering 하지 말 것
 
 # Check List
+- [ ] script: type="module", defer/async
 - [x] tsconfig **target**: es5? es6?
 - [x] tsconfig **module**: commonjs? es2015?
 - [ ] gitignore **subdirectories path**: for ignoring dist/*
